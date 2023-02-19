@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block title %}Category{% endblock %}
+{% block menu%}
+    <a href="{% url 'category_add' %}">Add Category</a>  
+{% endblock %}
+{% block content%}
+    <div class="container">
+        <h1>Category</h1>
+        <p>Title: {{ category.title }}</p>
+        <p>Text: {{ category.text }}</p>
+        <p>Author: {{ category.author }}</p>
+    </div>
+{% endblock %}
