@@ -7,13 +7,13 @@ from django.urls import reverse
 
 def add_category_view(request: WSGIRequest):
     if request.method == "GET":
-        return render(request, 'article_create.html')
+        return render(request, 'category_create.html')
     category_data = {
         'category_name': request.POST.get('category_name'),
         'description': request.POST.get('description')
     }
     category = Category.objects.create(**category_data)
-    return redirect('article_detail', pk=category.pk)
+    return redirect('category_create', pk=category.pk)
 
 
 def category_detail_view(request, pk):
