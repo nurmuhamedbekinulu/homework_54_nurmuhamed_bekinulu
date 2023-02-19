@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% block title %}Article Create{% endblock %}
+{% block content%}
+    <h1>New Category</h1>
+    <div class="form">
+        <form action="{% url 'add_category_view' %}" method="post">
+            {% csrf_token %}
+            <div class="form_row" for="title">
+                <lable for="category_name">Category name</lable>
+                <input type="text" id="category_name" name="category_name">
+            </div>
+            <div class="form_row">
+                <lable for="description">Text</lable>
+                <textarea name="text" id="description" cols="30" rows="10"></textarea>
+            </div>
+            <div class="form_row">
+                <input type="submit">
+            </div>
+        </form>
+    </div>
+{% endblock %}

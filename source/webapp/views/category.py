@@ -5,19 +5,18 @@ from django.http import HttpResponseNotFound
 from django.urls import reverse
 
 
-# def add_view(request: WSGIRequest):
-#     if request.method == "GET":
-#         return render(request, 'article_create.html')
-#     article_data = {
-#         'title': request.POST.get('title'),
-#         'text': request.POST.get('text'),
-#         'author': request.POST.get('author')
-#     }
-#     article = Article.objects.create(**article_data)
-#     return redirect('article_detail', pk=article.pk)
+def add_category_view(request: WSGIRequest):
+    if request.method == "GET":
+        return render(request, 'article_create.html')
+    category_data = {
+        'category_name': request.POST.get('category_name'),
+        'description': request.POST.get('description')
+    }
+    category = Category.objects.create(**category_data)
+    return redirect('article_detail', pk=category.pk)
 
 
-def detail_view(request, pk):
+def category_detail_view(request, pk):
     category = get_object_or_404(Category, pk=pk)
     return render(request, 'category.html', context={
         'category': category
