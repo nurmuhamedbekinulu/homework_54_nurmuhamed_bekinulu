@@ -4,7 +4,7 @@ from webapp.views.category import add_category_view, category_detail_view
 from webapp.views.product import add_product_view, product_detail_view
 
 
-urlpatterns =[
+urlpatterns = [
     path("", index_view, name='index'),
     path("products/", index_view, name='products'),
     path("category/add/", add_category_view, name='add_category'),

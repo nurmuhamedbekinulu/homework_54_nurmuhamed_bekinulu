@@ -9,7 +9,7 @@ def add_product_view(request: WSGIRequest):
     if request.method == "GET":
         categories = Category.objects.all()
         return render(request, 'product_create.html', context={
-        'categories': categories
+            'categories': categories
         })
     product_data = {
         'product_name': request.POST.get('product_name'),
@@ -26,9 +26,4 @@ def product_detail_view(request, pk):
     product = get_object_or_404(Product, pk=pk)
     return render(request, 'product.html', context={
         'product': product
-        })
-
-
-
-
-           
+    })

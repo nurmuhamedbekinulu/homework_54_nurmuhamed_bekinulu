@@ -5,7 +5,7 @@ from webapp.models import Product
 
 def index_view(request: WSGIRequest):
     products = Product.objects.all()
-    context={
+    context = {
         'products': products
     }
     return render(request, 'index.html', context=context)

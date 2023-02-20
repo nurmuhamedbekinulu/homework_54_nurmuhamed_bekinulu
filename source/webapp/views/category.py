@@ -20,4 +20,4 @@ def category_detail_view(request, pk):
     category = get_object_or_404(Category, pk=pk)
     return render(request, 'category.html', context={
         'category': category
-        })
+    })
