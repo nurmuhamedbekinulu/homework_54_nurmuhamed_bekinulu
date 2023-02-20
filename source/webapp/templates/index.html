@@ -1,5 +1,30 @@
 {% extends 'base.html' %}
 {% block title %}Home{% endblock %}
-
-<h1>Index page</h1>
-
+{% block menu%}
+    <a href="{% url 'add_product' %}">Add Product</a>
+{% endblock %}
+{% block content%}
+<div class="container text-center mt-5">
+    <div class="row justify-content-around">
+    {% for product in products %}
+    <div class="col-5">
+        <div class="card mb-3">
+            <div class="row g-0">
+            <div class="col-md-4">
+                <img src="{{ product.image_url }}" class="img-fluid rounded-start" alt="{{ product.product_name }}">
+            </div>
+            <div class="col-md-8 text-start">
+                <div class="card-body">
+                <h5 class="card-title">{{ product.product_name }}</h5>
+                <p class="card-text">{{ product.category }}</p>
+                <h5 class="card-text">Price: {{ product.price }}$</h5>
+                <a href="{% url 'product_detail' product.pk %}" class="btn btn-outline-primary">Подробнее...</a>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+    </div>
+</div>
+{% endblock %}

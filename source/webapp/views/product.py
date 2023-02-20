@@ -14,7 +14,6 @@ def add_product_view(request: WSGIRequest):
     product_data = {
         'product_name': request.POST.get('product_name'),
         'description': request.POST.get('description'),
-        # 'category': request.POST.get('category'),
         'category': Category.objects.get(id=request.POST['category']),
         'price': request.POST.get('price'),
         'image_url': request.POST.get('image_url')

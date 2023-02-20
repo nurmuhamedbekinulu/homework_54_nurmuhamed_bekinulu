@@ -5,12 +5,24 @@
 {% endblock %}
 {% block content%}
     <div class="container">
-        <h1>Product</h1>
-        <p>Product: {{ product.product_name }}</p>
-        <p>Description: {{ product.description }}</p>
-        <p>Category: {{ product.category }}</p>
-        <p>Created at: {{ product.created_at }}</p>
-        <p>Price: {{ product.price }}</p>
-        <p>Image: {{ product.image_url }}</p>
+        <div class="col-8 mx-auto mt-5">
+            <div class="card mb-3">
+                <div class="row g-0">
+                <div class="col-md-4">
+                    <img src="{{ product.image_url }}" class="img-fluid rounded-start" alt="{{ product.product_name }}">
+                </div>
+                <div class="col-md-8 text-start">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ product.product_name }}</h5>
+                        <p class="card-text">{{ product.category }}</p>
+                        <p class="card-text">{{ product.description }}</p>
+                        <p class="card-text">{{ product.created_at }}</p>
+                        <h5 class="card-text">Price: {{ product.price }}$</h5>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
     </div>
 {% endblock %}
+

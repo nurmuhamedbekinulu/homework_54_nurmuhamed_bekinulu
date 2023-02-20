@@ -6,6 +6,7 @@ from webapp.views.product import add_product_view, product_detail_view
 
 urlpatterns =[
     path("", index_view, name='index'),
+    path("products/", index_view, name='products'),
     path("category/add/", add_category_view, name='add_category'),
     path("category/<int:pk>", category_detail_view, name='category_detail'),
     path("product/add/", add_product_view, name='add_product'),
