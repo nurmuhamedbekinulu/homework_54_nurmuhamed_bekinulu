@@ -1,0 +1,122 @@
+[
+{
+    "model": "webapp.category",
+    "pk": 18,
+    "fields": {
+        "category_name": "non-alcoholic",
+        "description": "alcohol-free beverages"
+    }
+},
+{
+    "model": "webapp.category",
+    "pk": 19,
+    "fields": {
+        "category_name": "wine",
+        "description": "An alcoholic beverage obtained by partial or total fermentation of fresh grapes, crushed or not, or grape must."
+    }
+},
+{
+    "model": "webapp.category",
+    "pk": 20,
+    "fields": {
+        "category_name": "spirits",
+        "description": "Drinks with a high alcohol content"
+    }
+},
+{
+    "model": "webapp.product",
+    "pk": 10,
+    "fields": {
+        "product_name": "Coca-Cola No Sugar Can (Case)",
+        "description": "Coca-Cola No Sugar is a sparkling soft drink and a great new choice for those who want the classic taste of Coke without the sugar.",
+        "category": 18,
+        "created_at": "2023-02-20T19:33:58.653Z",
+        "price": "29.99",
+        "image_url": "https://cdn.shopify.com/s/files/1/0043/9258/3217/products/coca-coka-no-sugar-can_524x524.png?v=1620308665"
+    }
+},
+{
+    "model": "webapp.product",
+    "pk": 11,
+    "fields": {
+        "product_name": "Schweppes Soda Water 1.1L ",
+        "description": "In 1783, Jacob Schweppe perfected the process of aerating water, bringing to life sparkling beverages as we know them today. 235 years on, Schweppes Soda Water is forged through the blending of mineral salts with pristine triple filtered water, before being infused with thousands of delicate bubbles known as “Schweppervescence”.",
+        "category": 18,
+        "created_at": "2023-02-20T19:35:19.181Z",
+        "price": "4.99",
+        "image_url": "https://cdn.shopify.com/s/files/1/0043/9258/3217/products/schweppes-soda-1.1l_524x524.png?v=1620348651"
+    }
+},
+{
+    "model": "webapp.product",
+    "pk": 12,
+    "fields": {
+        "product_name": "Fever Tree Lemonade 200ml (Case) - Kent Street Cellars Fever Tree Premium Lemonade 200ml (Case)",
+        "description": "",
+        "category": 18,
+        "created_at": "2023-02-20T19:37:01.309Z",
+        "price": "50.00",
+        "image_url": "https://cdn.shopify.com/s/files/1/0043/9258/3217/products/ft_lemonade_465x600.jpg?v=1620314022"
+    }
+},
+{
+    "model": "webapp.product",
+    "pk": 13,
+    "fields": {
+        "product_name": "Settlement Vineyard Pinot Noir 2019 ",
+        "description": "Founded by Steve Planthaber, originally from Adelaide but post school left for the South Island of New Zealand. A move to Marlborough with his partner Kirsty Sutherland cemented his love for all things wine. Hard not to be inspired when meeting the Sutherland’s who were one of the pioneers of viticulture in the region, part of the original success of Cloudy Bay followed by establishing their own estate Dog Point. Steve was keen to find his own path and after 12 years running the production and operations at Cloudy Bay decided to begin his own wine brand, Settlement.\r\n\r\nSettlement, named after the stunning Amphitheatre single vineyard site in the Omaka Valley, is dedicated entirely to the production of organic, old vine single vineyard expressions of very special sites in Marlborough. \r\n\r\nDoesn’t get any more Southern Valley than this site, right in the Omaka Valley. High density of clay in this soil, lots of very good Pinot Noir sites in this sub-region. The Settlement Vineyard is the youngest of the 4 sites, planted in 2009 but a beautiful amphitheater, steep hillside vineyard, 4000 vines per hectare so high density plantings. North/North West facing. Hand picked/sorted, 70% destemmed/30% wholebunch. Short pre soak then wild fermented in tank, Pressed to barrel then aged for 18 months in French oak, 35% new. Francois Freres and Mercurey Oak.\r\n\r\nFrom the Settlement Vineyard – aromas of blackcurrant and dark cherry, there’s plenty of wood spices and barrel smoke moments, dried herb and dry stone mineral notes bring complexity, depth and intrigue. On the palate – dry, tense, youthful, fruity and young. A wine that must remain in your cellar till at least the end of 2022 so integration and harmonies can begin to engage. In the meantime and if you must open a bottle – be sure to serve with fresh protein foods. Firm tannins and acid line add texture, the core of fruit remain but is hidden till the tannins and dried herb layers are allowed to integrate. Plenty of potential and a lovely expression with best drinking from December 31st 2022 through 2028+. Am keen to try this wine again in 12 months to check its progress. - Cameron Douglas MW, 93 Points",
+        "category": 19,
+        "created_at": "2023-02-20T19:38:10.628Z",
+        "price": "41.99",
+        "image_url": "https://cdn.shopify.com/s/files/1/0043/9258/3217/products/settlement-settlement-vineyard-pinot-noir_524x524.png?v=1665106640"
+    }
+},
+{
+    "model": "webapp.product",
+    "pk": 14,
+    "fields": {
+        "product_name": "Domaine Didier Dagueneau Pur Sang 2019 ",
+        "description": "Pur Sang is French for thoroughbred. The label evolved from Didier Dagueneau’s frustration at how often wine writers were referencing the fact that he used a horse to till some of the vineyards. The first label was a photographic representation of a horsehide rug! \r\n\r\nThis is rightly considered one of Dagueneau’s superstars - although in truth, all his wines are. It comes from a densely planted, 30-year-old vineyard in Saint-Laurent-l’Abbaye called La Folie (the madness). It’s hidden between two parcels of woodland about five kilometres north of Saint-Andelain. The vineyard is named for the local farmers, who thought Didier Dagueneau was mad when he purchased the land. It was not a vineyard at the time and full of huge boulders—back then it was not even registered as part of the Pouilly-Fumé AOC.\r\n\r\nIt turns out that Didier had done his homework; not only was La Folie a historical Pouilly vineyard, but its vein of pure flint and Ludian silica clay (chaille roulées) and its gently sloping south/south-east exposure, made it potentially one of Pouilly’s finest. This site not only ended up being the birthplace of the Pur Sang cuvée, but was also the source of the legendary, ultra-rare Astéroïde cuvée,which was made from 18 rows of ungrafted vines (that have finally succumbed to phylloxera).",
+        "category": 18,
+        "created_at": "2023-02-20T19:39:52.532Z",
+        "price": "249.99",
+        "image_url": "https://cdn.shopify.com/s/files/1/0043/9258/3217/products/domainedidierdagueneaupursang_524x524.png?v=1659490864"
+    }
+},
+{
+    "model": "webapp.product",
+    "pk": 15,
+    "fields": {
+        "product_name": "The Macallan A Night On Earth Single Malt Scotch Whisky 700ml (2nd Release) ",
+        "description": "The Macallan was one of the first distillers in Scotland to be legally licensed. Since then they have built a reputation as one of the world’s leading single malt whiskies. The creation of The Macallan draws on the vital contributing influences of Spain, North America and Scotland - and of their respective natural raw materials, combined with traditional methods and craftsmanship.\r\n\r\nThis Macallan A Night On Earth Single Malt Scotch Whisky is the second release of this whisky. At 43% abv it is a slightly stronger bottling than the previous release.\r\n\r\nTelling the story of Scotland’s world-famous Hogmanay festivities celebrated annually on 31st December, A Night on Earth in Scotland captures the universal joy of celebrating the change of year",
+        "category": 20,
+        "created_at": "2023-02-20T19:41:27.729Z",
+        "price": "249.99",
+        "image_url": "https://cdn.shopify.com/s/files/1/0043/9258/3217/products/the-macallan-a-night-on-earth-single-malt-scotch-whisky-outside_2261908b-a75f-4b7a-b2dd-4a2656b2151f_524x524.png?v=1667954696"
+    }
+},
+{
+    "model": "webapp.product",
+    "pk": 16,
+    "fields": {
+        "product_name": "Akkeshi Usui Blended Japanese Whisky 700ml (2021 Release) ",
+        "description": "Akkeshi began distilling in 2016, based in the Akkeshi District of Hokkaido, the concept of distilling and maturing single malt in Japan’s northern wilderness traces back to the very first plans of Masataka Taketsuru, a pioneer of the country’s early whisky production. \r\n\r\nThe Akkeshi Usui blend is 2nd release from the distilleries “24 Solar Terms” (Sekki) line-up. The 24 solar terms are the names that represent the seasons by dividing the year into 24 equal parts, such as the beginning of spring and the summer solstice in the distillery's series of 24 Sekki, Japan's distinctive cycle of seasons. The Usui or \"Rain water\" is the very first blended whisky from the distillery, Akkeshi Blended Whisky Usui is a blend of single malts distilled in Akkeshi and aged for at least three years (in a combination of bourbon, sherry, mizunara and wine casks) and a complement of imported new make grain whiskies all aged in Japan.\r\n\r\nAccording to a label translation, \"The sweet and fragrant peat of Akkeshi malt combined with the lightness of the grain makes it gorgeous and never gets tired of drinking.\"\r\n\r\nIts harmonious and peaty profile reveals a rich and fruity nose with notes of citrus, raisins, but also cocoa and creamy custard. Reminiscent of a curacao on the palate, the citrus aromas intensify with notes of yellow and lime lemons and juicy oranges. On the finish, the milk chocolate sweetness blends with the spiciness of white pepper notes. \r\n",
+        "category": 18,
+        "created_at": "2023-02-20T19:42:32.521Z",
+        "price": "449.99",
+        "image_url": "https://cdn.shopify.com/s/files/1/0043/9258/3217/products/akkeshi-usui_524x524.png?v=1637706137"
+    }
+},
+{
+    "model": "webapp.product",
+    "pk": 17,
+    "fields": {
+        "product_name": "San Pellegrino 500ml (Case) - Kent Street Cellars San Pellegrino 500ml (Case)",
+        "description": "The original San Pellegrino sparkling water. The clean, refreshing taste of Italy's classic sparkling water is sure to quench your thirst. ",
+        "category": 18,
+        "created_at": "2023-02-20T19:53:02.040Z",
+        "price": "40.90",
+        "image_url": "https://cdn.shopify.com/s/files/1/0043/9258/3217/products/san-pellegrino-500ml-_case_851x851.png?v=1620348281"
+    }
+}
+]

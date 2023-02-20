@@ -1,9 +1,20 @@
 {% extends 'base.html' %}
+{% block script %}
+<script>
+    function validateForm() {
+        var x = document.getElementById("price").value;
+        if (!/^\d+(\.\d{1,2})?$/.test(x)) {
+            alert("Enter a positive number with two digits after the decimal point in the 'price' field!");
+            return false;
+        }
+        }
+</script>
+{% endblock %}
 {% block title %}Product Create{% endblock %}
 {% block content%}
     <h1>New Product</h1>
     <div class="form col-8">
-        <form action="{% url 'add_product' %}" method="post">
+        <form action="{% url 'add_product' %}" method="post"  onsubmit="return validateForm()">
             {% csrf_token %}
             <div class="mb-3 row">
                 <label for="product_name" class="col-sm-2 col-form-label">Product name</label>
