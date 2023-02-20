@@ -13,7 +13,7 @@ def add_category_view(request: WSGIRequest):
         'description': request.POST.get('description')
     }
     category = Category.objects.create(**category_data)
-    return redirect('category_create', pk=category.pk)
+    return redirect('category_detail', pk=category.pk)
 
 
 def category_detail_view(request, pk):

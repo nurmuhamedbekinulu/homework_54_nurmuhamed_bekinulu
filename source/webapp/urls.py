@@ -6,8 +6,8 @@ from webapp.views.product import add_product_view, product_detail_view
 
 urlpatterns =[
     path("", index_view, name='index'),
-    path("category/add/", add_category_view, name='add_category_view'),
-    path("category/<int:pk>", category_detail_view, name='category_detail_view'),
-    path("product/add/", add_product_view, name='add_product_view'),
-    path("product/<int:pk>", product_detail_view, name='product_detail_view')
+    path("category/add/", add_category_view, name='add_category'),
+    path("category/<int:pk>", category_detail_view, name='category_detail'),
+    path("product/add/", add_product_view, name='add_product'),
+    path("product/<int:pk>", product_detail_view, name='product_detail')
 ]

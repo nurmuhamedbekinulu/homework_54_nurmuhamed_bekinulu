@@ -1,12 +1,16 @@
 {% extends 'base.html' %}
-{% block title %}Category{% endblock %}
+{% block title %}Product{% endblock %}
 {% block menu%}
-    <a href="{% url 'category_add' %}">Add Category</a>  
+    <a href="{% url 'add_product' %}">Add Product</a>  
 {% endblock %}
 {% block content%}
     <div class="container">
-        <h1>Category</h1>
-        <p>Category: {{ category.category_name }}</p>
-        <p>Description: {{ category.description }}</p>
+        <h1>Product</h1>
+        <p>Product: {{ product.product_name }}</p>
+        <p>Description: {{ product.description }}</p>
+        <p>Category: {{ product.category }}</p>
+        <p>Created at: {{ product.created_at }}</p>
+        <p>Price: {{ product.price }}</p>
+        <p>Image: {{ product.image_url }}</p>
     </div>
 {% endblock %}
